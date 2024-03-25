@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph2"
+    app:startDestination="@id/mainActivitys">
+
+    <fragment
+        android:id="@+id/mainActivitys"
+        android:name="com.org.customer.fragment.CustomerDetailsFragment"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_details_customer" >
+       <action
+            android:id="@+id/action_mainActivitys2_to_cleanerInfo"
+            app:destination="@id/cleanerInfo" />
+        <action
+            android:id="@+id/action_mainActivitys2_to_mapboxTutorial_22"
+            app:destination="@id/mapboxTutorial_22" />
+        <action
+            android:id="@+id/action_mainActivitys2_to_workDones"
+            app:destination="@id/workDones" />
+        <action
+            android:id="@+id/action_mainActivitys_to_privacyPolicy"
+            app:destination="@id/privacyPolicy" />
+        <action
+            android:id="@+id/action_mainActivitys_to_myQrCode"
+            app:destination="@id/myQrCode" />
+        <action
+            android:id="@+id/action_mainActivitys_to_help"
+            app:destination="@id/help2" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/plan1"
+        android:name="com.org.customer.fragment.ChoosePlanFragment"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_choose_plan" >
+        <action
+            android:id="@+id/action_plan1_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.org.customer.fragment.PaymentFragment"
+        android:label="Clinifie" />
+
+    <fragment
+        android:id="@+id/cleanerInfo"
+        android:name="com.org.customer.fragment.CleanerInfo"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_cleaner_info" />
+
+    <fragment
+        android:id="@+id/profileActivity"
+        android:name="com.org.customer.fragment.ProfileActivity"
+        android:label="Clinifie"
+        tools:layout="@layout/activity_profile" />
+
+    <fragment
+        android:id="@+id/myQrCode"
+        android:name="com.org.customer.fragment.MyQrCode"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_my_qr_code" />
+
+    <fragment
+        android:id="@+id/privacyPolicy"
+        android:name="com.org.customer.fragment.PrivacyPolicy"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_privacy_policy" />
+
+    <fragment
+        android:id="@+id/proofLocationFragment"
+        android:name="com.org.customer.fragment.ProofLocationFragment"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_proof_location" />
+
+    <fragment
+        android:id="@+id/mapboxTutorial_22"
+        android:name="com.org.customer.fragment.CustomerSaveLocation"
+        android:label="Clinifie" >
+        <action
+            android:id="@+id/action_mapboxTutorial_22_to_plan1"
+            app:destination="@id/plan1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/workDones"
+        android:name="com.org.customer.fragment.WorkDones"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_work_dones" >
+        <action
+            android:id="@+id/action_workDones_to_proofLocationFragment"
+            app:destination="@id/proofLocationFragment" />
+        <action
+            android:id="@+id/action_workDones_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.org.customer.fragment.GalleryFragment"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_gallery" >
+        <argument
+            android:name="current_date"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/help2"
+        android:name="com.org.customer.fragment.Help"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+</navigation>

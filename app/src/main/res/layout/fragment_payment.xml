@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/whiteTextColor"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50sp"
+        android:gravity="center"
+        android:text="You have requested"
+        android:textColor="@color/colorblack"
+        android:textSize="20sp" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/rupeesPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50sp"
+        android:gravity="center"
+        android:text="You have requested"
+        android:textColor="@color/colorblack"
+        android:textSize="20sp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_pay"
+        android:layout_width="132dp"
+        android:layout_height="45dp"
+        android:layout_margin="50sp"
+        android:layout_gravity="center"
+        android:text="pay"
+        android:background="@drawable/black_back_ground_button"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="20sp" />
+
+</LinearLayout>
+
+
+</RelativeLayout>

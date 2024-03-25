@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.org.cleaner.activitys.CleanerMainActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:text="DashBoard"
+        android:layout_gravity="center"
+        android:textColor="@color/quantum_black_100"
+        android:textSize="50sp"
+        app:fontFamily="@font/alef"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="16dp">
+
+            <ImageView
+                android:id="@+id/myCustomers"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:background="@color/mapboxWhite"
+                android:layout_marginBottom="25dp"
+                android:src="@drawable/ic_person" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="MyCustomers"
+                android:textColor="@color/quantum_black_100"
+                android:textSize="25sp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                app:fontFamily="@font/alef" />
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+
+
+</LinearLayout>

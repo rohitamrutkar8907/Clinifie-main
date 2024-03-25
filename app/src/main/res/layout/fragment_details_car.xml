@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/mapboxWhite"
+    android:padding="20dp"
+    tools:context="com.org.customer.fragment.EnterCustomerDetails">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20sp"
+        android:text="User Information"
+        android:textColor="#282F39"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="152dp"
+                android:layout_height="169dp"
+                android:layout_gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_person" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar3"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:drawablePadding="10sp"
+                android:hint="Enter your name"
+                android:textColorHint="@color/browser_actions_title_color"
+                android:maxLines="1"
+                android:textColor="@color/quantum_black_100"
+                android:ellipsize="end"
+                android:inputType="text" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/carModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:drawablePadding="10sp"
+                android:hint="Enter your model"
+                android:textColorHint="@color/browser_actions_title_color"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/quantum_black_100"
+                android:inputType="text" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/carNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:drawablePadding="10sp"
+                android:hint="Enter car number"
+                android:textColorHint="@color/browser_actions_title_color"
+                android:ellipsize="end"
+                android:textColor="@color/quantum_black_100"
+                android:maxLines="1"
+                android:inputType="text" />
+
+            <!--   <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/customer_name"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="15sp"
+                   android:hint="Enter your name"
+                   android:textColorHint="#130F01"
+                   app:boxStrokeColor="#171201"
+                   app:passwordToggleEnabled="true">
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:focusable="true"
+                       android:inputType="text"
+                       android:textColor="@color/colorblack" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/carModel"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="15sp"
+                   android:hint="Enter your Car Model"
+                   android:textColorHint="#130F01"
+                   app:boxStrokeColor="#171201"
+                   app:passwordToggleEnabled="true">
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:focusable="true"
+                       android:inputType="text"
+                       android:textColor="@color/colorblack" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/carNumber"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="15sp"
+                   android:hint="Enter your Car number"
+                   android:textColorHint="#100C00"
+                   app:boxStrokeColor="#000000"
+                   app:passwordToggleEnabled="true">
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:focusable="true"
+                       android:inputType="text"
+                       android:textColor="@color/colorblack" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+   -->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/next"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:background="@drawable/black_back_ground_button"
+                android:text="GO"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

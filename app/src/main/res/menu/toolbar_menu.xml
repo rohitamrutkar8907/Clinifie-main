@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item1"
+        android:icon="@drawable/ic_code_scanner_auto_focus_on"
+        android:title="item_1"
+        app:showAsAction="ifRoom" />
+
+  <!--  <item
+        android:id="@+id/item2"
+        android:icon="@drawable/ic_route_preview_dark"
+        android:title="show_root"
+        app:showAsAction="ifRoom" />-->
+
+</menu>

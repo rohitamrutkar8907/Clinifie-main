@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/mapboxTutorial_2">
+
+
+    <fragment
+        android:id="@+id/plan1"
+        android:name="com.org.customer.fragment.ChoosePlanFragment"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_choose_plan" >
+        <action
+            android:id="@+id/action_plan1_to_paymentActivityPlan"
+            app:destination="@id/paymentActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/carDetails"
+        android:name="com.org.customer.fragment.EnterCustomerDetails"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_details_car" >
+        <action
+            android:id="@+id/action_carDetails_to_blankFragment"
+            app:destination="@id/blankFragment"
+
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.org.customer.fragment.ColorPickerFragment"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_color_picker" >
+        <action
+            android:id="@+id/action_blankFragment_to_plan1"
+            app:destination="@id/plan1"
+
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainActivitys"
+        android:name="com.org.customer.fragment.CustomerDetailsFragment"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_details_customer"
+
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"/>
+
+
+    <fragment
+        android:id="@+id/paymentActivity"
+        android:name="com.org.customer.fragment.PaymentFragment"
+        android:label="Clinifie" />
+
+    <fragment
+        android:id="@+id/gps_check_fragment"
+        android:name="com.org.common.GpsCheckFragment"
+        android:label="Clinifie" />
+
+    <fragment
+        android:id="@+id/profileActivity"
+        android:name="com.org.customer.fragment.ProfileActivity"
+        android:label="Clinifie"
+        tools:layout="@layout/activity_profile" />
+
+    <fragment
+        android:id="@+id/showMessage"
+        android:name="com.org.customer.fragment.ShowMessage"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_show_message" />
+    <fragment
+        android:id="@+id/myQrCode"
+        android:name="com.org.customer.fragment.MyQrCode"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_my_qr_code" />
+
+    <fragment
+        android:id="@+id/privacyPolicy"
+        android:name="com.org.customer.fragment.PrivacyPolicy"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_privacy_policy" />
+    <fragment
+        android:id="@+id/mapboxTutorial_2"
+        android:name="com.org.customer.fragment.CustomerSaveLocation"
+        android:label="Clinifie" >
+        <action
+            android:id="@+id/action_mapboxTutorial_2_to_carDetails"
+            app:destination="@id/carDetails" />
+    </fragment>
+
+</navigation>

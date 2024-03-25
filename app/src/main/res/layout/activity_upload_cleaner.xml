@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/mapboxWhite"
+    android:orientation="vertical"
+    tools:context="com.org.cleaner.fragment.UploadCleaner">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="35dp"
+            android:layout_toStartOf="@+id/edit_button"
+            android:fontFamily="@font/alef"
+            android:text="User Information"
+            android:textColor="#282F39"
+            android:textSize="25sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="28dp"
+            android:backgroundTint="@color/orange_200"
+            android:text="edit"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:background="@color/mapboxWhite"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/ic_person" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtdata"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:enabled="false"
+                    android:layout_margin="20dp"
+                    android:hint="Enter your name here"
+                    android:textColor="@color/quantum_black_100"
+                    android:textColorHint="@color/browser_actions_title_color"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusTopEnd="16dp"
+                    app:boxCornerRadiusTopStart="16dp"
+                    app:endIconMode="clear_text" />
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtdata2"
+                    android:layout_width="300dp"
+                    android:enabled="false"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:hint="Enter Address here"
+                    android:inputType="textPostalAddress"
+                    android:textColor="@color/quantum_black_100"
+                    android:textColorHint="@color/browser_actions_title_color" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtdata3"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="lkjs"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="30dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnbrowse"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="50sp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:text="Browse"
+                        android:textColor="@color/black" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnupload"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="50sp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:text="Upload"
+                        android:textColor="@color/colorblack" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

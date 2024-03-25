@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.org.customer.activity.ProvideRequestPermission">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RequestButton"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rectangle_2309"
+        android:text="Allow"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/RequestButton"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="426dp"
+        android:gravity="center"
+        android:text="Please Allow Permission"
+        android:textColor="@color/quantum_black_100"
+        android:textSize="39sp" />
+
+</RelativeLayout>

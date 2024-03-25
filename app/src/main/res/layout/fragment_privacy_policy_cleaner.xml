@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mapboxWhite"
+    android:orientation="vertical"
+    tools:context="com.org.cleaner.fragment.PrivacyPolicyCleanerFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/privacypolicytext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="40dp"
+            android:textSize="20dp"
+            android:textColor="@color/quantum_black_100"
+            android:text="@string/hello_blank_fragment" />
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_cleaner"
+    app:startDestination="@id/upload_cleaner">
+
+
+    <fragment
+        android:id="@+id/upload_cleaner"
+        android:name="com.org.cleaner.fragment.UploadCleaner"
+        android:label="Clinifie"
+        tools:layout="@layout/activity_upload_cleaner"/>
+
+</navigation>

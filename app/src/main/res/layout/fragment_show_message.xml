@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mapboxWhite"
+    tools:context="com.org.customer.fragment.ShowMessage">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Please first complete the registration process"
+        android:textColor="@color/quantum_black_100"
+        android:gravity="center"
+        android:textSize="30dp"/>
+
+</FrameLayout>

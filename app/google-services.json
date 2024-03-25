@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "901324594705",
+    "firebase_url": "https://clinify-901de-default-rtdb.firebaseio.com",
+    "project_id": "clinify-901de",
+    "storage_bucket": "clinify-901de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901324594705:android:b9b5805dab9d47f52edbb0",
+        "android_client_info": {
+          "package_name": "com.org.clinify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "901324594705-6caof1uekf0dsh6aq7e830p24rsukktc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.org.clinify",
+            "certificate_hash": "e0ca311d8287e5e9c9ce763bd4535f893b220604"
+          }
+        },
+        {
+          "client_id": "901324594705-b5uvjutmjo3udit1874a2a3n8dma1bgg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.org.clinify",
+            "certificate_hash": "ddcf1198206f5cfd3ee21863cf3d8092a48bf429"
+          }
+        },
+        {
+          "client_id": "901324594705-ir7dl9vadjr421qoddqa5ter72afpjha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoS2svJlbrXKquzEsRiV94fNeyUwAWG0g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "901324594705-ir7dl9vadjr421qoddqa5ter72afpjha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.org.common.VerifyPhoneActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:text="Getting Otp..."
+        android:textColor="@color/darkTextColor"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/number_to_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="+91 98765 43210"
+            android:textColor="@color/darkTextColor"
+            android:textSize="20dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50sp"
+            android:text="Edit"
+            android:textColor="@color/darkTextColor"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/pinview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        app:cursorVisible="false"
+        app:forceKeyboard="true"
+        app:hint="0"
+        app:inputType="number"
+        app:password="false"
+        app:pinBackground="@color/mapboxGrayLight"
+        app:pinHeight="40dp"
+        app:pinLength="6"
+        app:pinWidth="40dp"
+        app:textSize="10dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSignIn"
+        android:layout_width="132dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Submit"
+        android:textColor="@color/whiteTextColor" />
+
+    <ProgressBar
+        android:id="@+id/progressbarVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50sp"
+        android:visibility="gone" />
+
+</LinearLayout>
+

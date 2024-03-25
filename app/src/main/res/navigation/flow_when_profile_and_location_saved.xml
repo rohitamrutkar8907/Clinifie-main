@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_cleaner"
+    app:startDestination="@id/main_dash_board">
+
+    <fragment
+        android:id="@+id/main_dash_board"
+        android:name="com.org.cleaner.fragment.MainDashboard"
+        android:label="Clinifie"
+        tools:layout="@layout/activity_main_dashboard">
+        <action
+            android:id="@+id/action_main_dash_board_to_my_customer_list"
+            app:destination="@id/my_customer_list" />
+        <action
+            android:id="@+id/action_main_dash_board_to_privacyPolicyCleanerFragment"
+            app:destination="@id/privacyPolicyCleanerFragment" />
+        <action
+            android:id="@+id/action_main_dash_board_to_helpCleanerFragment"
+            app:destination="@id/helpCleanerFragment" />
+        <action
+            android:id="@+id/action_main_dash_board_to_upload_cleaner"
+            app:destination="@id/upload_cleaner" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/upload_cleaner"
+        android:name="com.org.cleaner.fragment.UploadCleaner"
+        android:label="Clinifie"
+        tools:layout="@layout/activity_upload_cleaner">
+        <action
+            android:id="@+id/action_upload_cleaner_to_cleaner_save_location"
+            app:destination="@id/cleaner_save_location" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gps_check_fragment"
+        android:name="com.org.cleaner.fragment.GpsCheckFragmentCleaner"
+        android:label="Clinifie" />
+
+    <fragment
+        android:id="@+id/cleaner_save_location"
+        android:name="com.org.cleaner.fragment.CleanerSaveLocation"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_cleaner_map">
+        <action
+            android:id="@+id/action_upload_cleaner_to_cleaner_save_location"
+            app:destination="@id/gps_check_fragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/my_customer_list"
+        android:name="com.org.cleaner.fragment.MyCustomerList"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_my_customer_list">
+        <action
+            android:id="@+id/action_my_customer_list_to_customer_detail_info"
+            app:destination="@id/customer_detail_info" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/customer_detail_info"
+        android:name="com.org.cleaner.fragment.CustomerDetailInfo"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_customer_detail_info">
+        <action
+            android:id="@+id/action_customer_detail_info_to_scan_fragment"
+            app:destination="@id/scan_fragment" />
+        <argument
+            android:name="Customer"
+            app:argType="com.org.cleaner.fragment.model.Customer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/scan_fragment"
+        android:name="com.org.cleaner.fragment.ScanFragment"
+        android:label="Clinifie">
+        <action
+            android:id="@+id/action_scan_fragment_to_save_picture_and_proof"
+            app:destination="@id/save_picture_and_proof" />
+        <argument
+            android:name="Customer"
+            app:argType="com.org.cleaner.fragment.model.Customer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/save_picture_and_proof"
+        android:name="com.org.cleaner.fragment.SavePictureAndProof"
+        android:label="Clinifie">
+        <argument
+            android:name="Customer"
+            app:argType="com.org.cleaner.fragment.model.Customer" />
+        <argument
+            android:name="latitude"
+            android:defaultValue="0.0"
+            app:argType="string" />
+        <argument
+            android:name="longititude"
+            android:defaultValue="0.0"
+            app:argType="string" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/privacyPolicyCleanerFragment"
+        android:name="com.org.cleaner.fragment.PrivacyPolicyCleanerFragment"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_privacy_policy_cleaner" />
+    <fragment
+        android:id="@+id/helpCleanerFragment"
+        android:name="com.org.cleaner.fragment.HelpCleanerFragment"
+        android:label="Clinifie"
+        tools:layout="@layout/fragment_help_cleaner" />
+
+
+</navigation>

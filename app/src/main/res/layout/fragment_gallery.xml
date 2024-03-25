@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/mapboxWhite"
+    android:layout_height="match_parent"
+    tools:context="com.org.customer.fragment.GalleryFragment">
+
+
+    <ImageView
+        android:id="@+id/gallery"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_person" />
+
+    <ProgressBar
+        android:id="@+id/load_gallery_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</FrameLayout>

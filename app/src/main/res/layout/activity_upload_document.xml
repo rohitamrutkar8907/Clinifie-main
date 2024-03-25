@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.org.customer.fragment.UploadDocument">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Update_Documents">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:text="Upload Your Adhar card"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="20dp" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/updoc1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_person" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:gravity="center"
+                android:text="Wait till image loads"
+                android:textColor="@color/quantum_black_100"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:text="Upload Your Pan card"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="20dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/updoc2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_person" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:text="Upload Your light Bill"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="20dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/updoc3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_person" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:text="Upload Your Driving Liense Card"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="20dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/updoc4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_person" />
+
+
+    </LinearLayout>
+
+</ScrollView>

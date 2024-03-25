@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mapboxWhite"
+    tools:context="com.org.customer.fragment.ColorPickerFragment">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/colorPickerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:layout_marginBottom="50sp"
+        android:fontFamily="@font/alef"
+        android:gravity="center_horizontal"
+        android:text="Pick your car\'s color"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            app:cardCornerRadius="70sp"
+            app:cardElevation="0sp">
+
+            <ImageView
+                android:id="@+id/colorPicker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_dark_background" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:background="@drawable/black_back_ground_button"
+        android:fontFamily="@font/alef"
+        android:text="GO"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30sp"
+            android:layout_marginTop="20sp"
+            android:fontFamily="@font/alef"
+            android:text="Please click on circle to choose color! "
+            android:textColor="@color/quantum_black_100"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progressBarCarColor"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>
